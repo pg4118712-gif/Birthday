@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Baccha ❤️</title>
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow:hidden;
+background:linear-gradient(135deg,#ffd6e7,#ffe8f1);
+}
+
+.slider{
+display:flex;
+width:600%;
+height:100vh;
+transition:transform .7s ease;
+}
+
+.slide{
+width:100vw;
+height:100vh;
+flex-shrink:0;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+text-align:center;
+position:relative;
+}
+
+.content{
+max-width:800px;
+}
+
+h1{
+font-size:2.2rem;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.15rem;
+line-height:1.8;
+font-weight:500;
+}
+
+img{
+width:260px;
+max-width:85%;
+border-radius:20px;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Different text colors */
+.slide1{color:#6a1b9a;}
+.slide2{color:#880e4f;}
+.slide3{color:#1a237e;}
+.slide4{color:#004d40;}
+.slide5{color:#4e342e;}
+.slide6{color:#bf360c;}
+
+.nav{
+position:fixed;
+bottom:25px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:15px;
+z-index:100;
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:#ff4f8b;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+button:hover{
+background:#ff2f74;
+}
+
+.slide-number{
+position:absolute;
+top:20px;
+right:20px;
+font-size:18px;
+font-weight:bold;
+opacity:0.6;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:1.8rem;
+}
+
+p{
+font-size:1rem;
+line-height:1.7;
+}
+
+img{
+width:220px;
+}
+
+button{
+padding:10px 18px;
+font-size:14px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="slider" id="slider">
+
+<!-- Slide 1 -->
+<div class="slide slide1">
+<div class="content">
+<div class="slide-number">1 / 6</div>
+
+<img src="photo1.jpeg" alt="Birthday Photo">
+
+<h1>Happy Birthday Baccha 😚</h1>
+<p>
+Wishing you the happiest birthday filled with love,
+smiles, laughter and beautiful memories. 💖✨
+</p>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide slide2">
+<div class="content">
+<div class="slide-number">2 / 6</div>
+
+<img src="photo2.jpeg" alt="Birthday Photo">
+
+<h1>Thattt oneeee gurlll i wannaaa seee her happyyyy everydayyy 🩷</h1>
+
+<p>
+Because seeing you happy always makes my day brighter. ✨💕<br><br>
+</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide slide3">
+<div class="content">
+<div class="slide-number">3 / 6</div>
+
+<h1>Happy Birthday Baccha 🎂🎉💖</h1>
+
+<p>
+Aaj officially tumhara special day hai, isliye aaj ke din
+tumhe extra attention, extra cake aur extra happiness milni chahiye 😌✨
+<br><br>
+
+Thank you for being such an amazing friend 🫂<br><br>
+I hope this year brings you lots of happiness, success,
+good health, and countless reasons to smile.
+May all your dreams come true... and may your birthday cake be bigger than your mood swings. 😂🎂
+<br><br>
+
+Stay happy, stay cute, stay crazy, and never stop being the wonderful person you are.
+Enjoy your day to the fullest because today the world is celebrating the day one of my favorite people was born 🥳💕
+</p>
+
+</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide slide4">
+<div class="content">
+<div class="slide-number">4 / 6</div>
+
+<h1>A Special Truth ❤️</h1>
+
+<p>
+No matter whether we talk or not I'll always call you my baccha
+because deep in my heart, there will always be a soft corner
+for the sweet, innocent person I met on the first day 🫀🫂
+</p>
+
+</div>
+</div>
+
+<!-- Slide 5 -->
+<div class="slide slide5">
+<div class="content">
+<div class="slide-number">5 / 6</div>
+
+<img src="photo3.jpeg" alt="Birthday Photo">
+
+<h1>But Wait 😭</h1>
+
+<p>
+What is my life without your bak bak,
+Drama, emotional blackmailing,
+ankho se darana, nakhre,
+altu fltu harkat &
+bat bat pr rone baali aadat?? 😭💖
+</p>
+
+</div>
+</div>
+
+<!-- Slide 6 -->
+<div class="slide slide6">
+<div class="content">
+<div class="slide-number">6 / 6</div>
+
+<img src="photo4.jpeg" alt="Birthday Photo">
+
+<h1>Mere Bhonduu Se Baccha 😚😅</h1>
+
+<p>
+<h2>Birthday hai Aaj 😚❤️</h2>
+
+Wishing u a very very happy birthday and sending
+lotttssss of loveee 😘❤️🎂✨
+<br><br>
+
+May your smile always stay this beautiful
+and may happiness always find its way to you. 💕
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div class="nav">
+<button onclick="prevSlide()">⬅ Prev</button>
+<button onclick="nextSlide()">Next ➡</button>
+</div>
+
+<script>
+const slider = document.getElementById("slider");
+let current = 0;
+const total = 6;
+
+function updateSlide(){
+slider.style.transform = `translateX(-${current * 100}vw)`;
+}
+
+function nextSlide(){
+if(current < total-1){
+current++;
+updateSlide();
+}
+}
+
+function prevSlide(){
+if(current > 0){
+current--;
+updateSlide();
+}
+}
+
+/* Swipe Support */
+let startX = 0;
+
+document.addEventListener("touchstart",(e)=>{
+startX = e.touches[0].clientX;
+});
+
+document.addEventListener("touchend",(e)=>{
+let endX = e.changedTouches[0].clientX;
+
+if(startX - endX > 50){
+nextSlide();
+}
+else if(endX - startX > 50){
+prevSlide();
+}
+});
+
+/* Birthday Confetti */
+function launchConfetti(){
+confetti({
+particleCount:200,
+spread:180,
+origin:{y:0.6}
+});
+
+setInterval(()=>{
+confetti({
+particleCount:50,
+spread:100,
+origin:{
+x:Math.random(),
+y:Math.random()-0.2
+}
+});
+},2500);
+}
+
+launchConfetti();
+</script>
+
+</body>
+</html>
